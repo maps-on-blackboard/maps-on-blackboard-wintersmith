@@ -1,0 +1,31 @@
+{
+  "name": "blog1-basic-map",
+  "version": "0.0.0",
+  "description": "This repository is part of my blog[ maps-on-blackboard](http://maps-on-blackboard.com) for article [Basic map with geojson2svg](http://maps-on-blackboard.com/articles/baic-map/)",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-debug": "browserify js/main.js --debug | exorcist js/build.js.map > js/build.js",
+    "build-min": "browserify js/main.js | uglifyjs -c > js/build.min.js",
+    "build": "npm run build-debug && npm run build-min",
+    "watch": "watchify js/main.js --debug -o js/build.js -v"
+  },
+  "keywords": [
+    "geojson",
+    "svg",
+    "maps",
+    "geojson2svg"
+  ],
+  "author": "Gagan Bansal <gaganbansal123@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "geojson2svg": "^0.1.4",
+    "parse-svg": "^0.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "exorcist": "^0.1.6",
+    "uglify": "^0.1.1",
+    "watchify": "^2.4.0"
+  }
+}
