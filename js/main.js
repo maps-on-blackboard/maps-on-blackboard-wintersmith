@@ -14,16 +14,14 @@ function drawGeoJSON(geojson) {
     width = container.offsetWidth,
     svgMap = document.getElementById('map');
   svgMap.setAttribute('width', width);
-  svgMap.setAttribute('height', width*.5);
+  svgMap.setAttribute('height', width * 0.5);
   // convert geojson to svg string 
   var convertor = geojson2svg(
-    {width: width, height: width},
+    {width: width, height: width * 0.5},
     { 
       attributes: {
-        'style': 'stroke:#006600; fill: #F0F8FF;stroke-width:0.5px;',
-        'vector-effect':'non-scaling-stroke'
+        'style': 'stroke:#006600; fill: #F0F8FF;stroke-width:0.5px;'
       },
-      explode: false,
       mapExtent: {
         left: -180,
         right: 180,
