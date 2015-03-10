@@ -1,0 +1,28 @@
+{
+  "output": "../maps-on-blackboard.github.io",
+  "locals": {
+    "url": "http://maps-on-blackboard.com",
+    "name": "Maps on Blackboard",
+    "owner": "Gagan Bansal",
+    "description": "Learn how to create online maps with lot of flexibility"
+  },
+  "plugins": [
+    "./plugins/paginator.coffee",
+    "wintersmith-data-json"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 3
+  }
+}
