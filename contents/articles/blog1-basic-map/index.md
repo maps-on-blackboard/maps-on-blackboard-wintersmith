@@ -104,15 +104,11 @@ And here is our simple map of countries that we created using geojson2svg.
 
 This map is actual map generated from the above code, please check this page source code. 
 
-**Note: Each article in this blog is an individual project. Like for this article the folder [basic-map][6] on my github blog [source code][7] on path [maps-on-blackboard.github.io/src/contents/articles][8] contains the full code including JavaScript and css. There would be map[n].html files that contian only map html component used in this blog. Extract the [basic-map][6] folder and play with it.**
-
+**Note: Each article in this blog is an individual project. Here is the [source code][6] for this article. In the source repository there are maps[n].html files that are used to show maps in the blog.**
 
 [1]: https://github.com/gagan-bansal/geojson2svg
 [2]: http://www.nytimes.com/2014/08/16/upshot/mapping-migration-in-the-united-states-since-1900.html?abt=0002&abg=0
 [3]: https://github.com/maps-on-blackboard/maps-on-blackboard.github.io/blob/master/src/contents/articles/basic-map/js/main.js
 [4]: https://www.npmjs.com/package/geojson2svg
 [5]: https://www.npmjs.com/package/parse-svg
-[6]: https://github.com/maps-on-blackboard/maps-on-blackboard.github.io/tree/master/src/contents/articles/basic-map
-[7]: https://github.com/maps-on-blackboard/maps-on-blackboard.github.io
-[8]: https://github.com/maps-on-blackboard/maps-on-blackboard.github.io/tree/master/src/contents/articles
- 
+[6]: https://github.com/maps-on-blackboard/blog1-basic-map/ 
