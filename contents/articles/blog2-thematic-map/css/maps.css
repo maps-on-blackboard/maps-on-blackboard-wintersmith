@@ -1,0 +1,38 @@
+#map {
+  background-color: #B8D4F9;
+}
+.low {
+  stroke: #cccccc;
+  stroke-width: 0.5px;
+  fill:   #FBF875;
+}
+.medium {
+  stroke: #cccccc;
+  stroke-width: 0.5px;
+  fill: #ED6A22;
+}
+.high {
+  stroke: #cccccc;
+  stroke-width: 0.5px;
+  fill:   #951703;
+}
+#legend li {
+display: inline;
+list-style-type: none;
+padding-right: 20px;
+}
+.box {
+  width: 25px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.l {
+  background-color: #FBF875;
+}
+.m {
+  background-color: #ED6A22;
+}
+.h {
+  background-color: #951703;
+}

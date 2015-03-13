@@ -1,0 +1,22 @@
+<html>
+<head>
+  <link rel="stylesheet" href="./css/maps.css"/>
+</head>
+  <body>
+    <div id="wrapper" style="width:714px;margin:auto">
+      <p>Thematic map using <a href="http://github.com/gagan-bansal/geojson2svg"> geojson2svg</a></p>
+      <p> Countries population map color coded as low, medium and high. </p>
+      <ul id="legend">
+        <li> <span class="box l"></span><span class="label">Low</span>
+        <li> <span class="box m"></span><span class="label">Medium</span>
+        <li> <span class="box h"></span><span class="label">High</span>
+      </ul>
+      <div id="mapArea" style="width: 100%;border:1px solid #c0c0c0;">
+        <svg id="map" xmlns="http://www.w3.org/2000/svg" x="0" y="0" >
+        </svg>
+        <script type="text/javascript" src="./js/build.js"></script>
+      </div>  
+    </div>
+  </body>
+</html>
+
