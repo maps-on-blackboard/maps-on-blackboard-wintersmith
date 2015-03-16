@@ -3,6 +3,13 @@ extends layout
 block append vars
   - bodyclass = 'article-detail'
 
+block append head
+  if page.metadata.localcss
+    each file in page.metadata.localcss
+      link(rel='stylesheet', href=file)
+  if page.metadata.localjs
+    each file in page.metadata.localjs
+      script(type='text/javascript' src=file) 
 block prepend title
 | #{ page.title + " - "}
 
@@ -17,7 +24,7 @@ block content
   article.article
     section.content!= typogr(page.html).typogrify()
     include social-post
-    include disqus
+    //- include disqus
 
 
 block prepend footer
