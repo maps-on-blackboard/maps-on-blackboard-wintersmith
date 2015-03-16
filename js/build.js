@@ -12,12 +12,17 @@ $.when(
   console.log('data not found');
 })
 
-
 function drawGeoJSON(respGeojson,respPopulation) {
   var geojson = respGeojson[0],
     population = respPopulation[0];
+  // extend geojson properties with country's population
+  var joinMap = {
+    geoKey: 'properties.name',
+    dataKey: 'countryName'
+  };
+  extendGeoJSON(geojson,population.countries,joinMap);
 
-  // get the width and height of svgg element.
+  // get the width and height of svg element.
   // as the width of the map container is 100%, we have to set the width and 
   // height of the svgElement as per the current width/height of the container.
   var container = document.getElementById('mapArea'),
@@ -25,12 +30,6 @@ function drawGeoJSON(respGeojson,respPopulation) {
     svgMap = document.getElementById('map');
   svgMap.setAttribute('width', width);
   svgMap.setAttribute('height', width * 0.5);
-  // extend geojson properties with country's population
-  var joinMap = {
-    geoKey: 'properties.name',
-    dataKey: 'countryName'
-  };
-  extendGeoJSON(geojson,population.countries,joinMap);
   // initiate geojson2svg 
   var convertor = geojson2svg(
     {width: width, height: width * 0.5},
@@ -45,18 +44,18 @@ function drawGeoJSON(respGeojson,respPopulation) {
   );
   // process every feature
   geojson.features.forEach(function(f) {
-    var fclass, svgString, svg;
+    var popCat, svgString, svg;
     if (f.properties.population <= 30000000) {
-      fclass = 'low';
+      popCat = 'low';
     } else if ( f.properties.population > 30000000 
     && f.properties.population <= 60000000) {
-      fclass = 'medium';
+      popCat = 'medium';
     } else {
-      fclass = 'high';
+      popCat = 'high';
     }
     svgString = convertor.convert(
       f,
-      {attributes: {'class': fclass}});
+      {attributes: {'class': popCat}});
     svg = parseSVG(svgString);
     svgMap.appendChild(svg);
   });
