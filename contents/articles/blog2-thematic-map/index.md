@@ -20,7 +20,7 @@ First I am showing the output, countries population thematic map color-coded as 
   <svg id="map" xmlns="http://www.w3.org/2000/svg" x="0" y="0" >
   </svg>
 </div>
-<script type="text/javascript" src="./js/build.js"></script>
+<script type="text/javascript" src="./js/build.min.js"></script>
 
 Now the approach for the map creation is assemble the data (geojson and population) then convert to svg and render on maps with styles required.
 

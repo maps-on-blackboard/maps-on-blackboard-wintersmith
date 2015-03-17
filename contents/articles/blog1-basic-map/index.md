@@ -100,7 +100,7 @@ And here is our simple map of countries that we created using geojson2svg.
     width="100%" height="50%" x="0" y="0" >
   </svg>
 </div>
-<script type="text/javascript" src="./js/build.js"></script>
+<script type="text/javascript" src="./js/build.min.js"></script>
 
 This map is actual map generated from the above code, please check this page source code. 
 
