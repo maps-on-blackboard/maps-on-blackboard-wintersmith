@@ -27,7 +27,7 @@ echo "node_modules" > .gitignore
 
 curl -s -u 'gaganbansal123@gmail.com' \
   https://api.github.com/orgs/maps-on-blackboard/repos \
-  -d '{ "name":"'$dest'", "description": "for my blog", "homepage": "http://maps-onblackboard.com/" }'
+  -d '{ "name":"'$dest'", "description": "This repository is part of my blog maps-on-blackboard.", "homepage": "http://maps-onblackboard.com/" }'
 
 repo=$dest'.git'
 git remote add origin https://github.com/maps-on-blackboard/$repo
