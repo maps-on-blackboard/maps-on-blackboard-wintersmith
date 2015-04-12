@@ -3,6 +3,7 @@ title: Thematic map with geojson2svg
 author: gagan
 email: gaganbansal123@gmail.com 
 date: 2015-03-15
+tags: ['maps', 'geojson2svg', 'svg', 'geojson', 'thematic maps']
 template: article.jade
 localcss: ['./css/maps.css']
 ---
