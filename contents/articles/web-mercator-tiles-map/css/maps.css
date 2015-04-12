@@ -1,0 +1,11 @@
+#map {
+  background-color: #B8D4F9;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #cccccc;
+  width: 600px;
+  height: 400px;
+}
+.tile {
+  position:absolute;
+}
