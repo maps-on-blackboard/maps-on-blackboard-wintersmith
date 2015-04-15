@@ -3,7 +3,6 @@ title: Basic map with geojson2svg
 author: gagan
 email: gaganbansal123@gmail.com 
 date: 2015-03-06
-tags: ['maps', 'geojson2svg', 'svg', 'geojson']
 template: article.jade
 ---
 Now a days its very easy to publish a map using online API like Google maps or using open framework OpenLayers or Leaflet with OSM data. Mapbox and CartoDB make the map publishing even more simplified. So where does this tool [geojson2svg] [1] stands in mapping domain?
