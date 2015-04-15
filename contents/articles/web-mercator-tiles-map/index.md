@@ -15,7 +15,7 @@ Here is the map with web mercator image tiles using npm module [web-mercator-til
 <div id="map"></div>
 <span> Center (long, lat) </span><input type="text" id="center" value="-71.147, 42.472"/>
 <span> Zoom </span> <input type="number" id="zoom" value="12" style="width:50px" /><input id="zoomTo" type="button" value="Zoom"/>
-<script type="text/javascript" src="./js/build.js"></script>
+<script type="text/javascript" src="./js/build.min.js"></script>
 
 Let's understand the approach for this map. So the requirement is to display a map for a given location and zoom level. 
 
