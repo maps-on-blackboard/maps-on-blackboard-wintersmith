@@ -1,22 +1,25 @@
 var webMercatorTiles = require('web-mercator-tiles'),
   SphericalMercator = require('sphericalmercator'),
   baseURL = 'http://tile.openstreetmap.org',
-  merc, mercCenter, mapExtent, res,
-  tiles, containter,mapDiv, size;
-  mercatorMaxRes = 156543.03392804097;
+  mercatorMaxRes = 156543.03392804097,
+  mapDiv, size;
 // get map window size
 mapDiv = document.getElementById('map');
 size = {
   height: parseInt(mapDiv.clientHeight),
   width: parseInt(mapDiv.clientWidth)
 };
+// projection tranformer instace
 merc = new SphericalMercator({size:256});
-zoomTo();
+// add event listenre to 'zoomTo' button 
 document.getElementById('zoomTo').addEventListener('click', zoomTo);
+// call zoomTo funcion on page load
+zoomTo();
 
 function zoomTo() {
   var center = document.getElementById('center').value.split(','),
-    zoom =  parseInt(document.getElementById('zoom').value);
+    zoom =  parseInt(document.getElementById('zoom').value),
+    mercCenter, mapExtent, res, tiles;
   // calculate map parameters in mercator projection
   mercCenter = merc.forward([parseFloat(center[0]),parseFloat(center[1])]);
   res = mercatorMaxRes/Math.pow(2,zoom);
