@@ -116,7 +116,7 @@ As we discussed in the approach extent (web/spehrical mercator) of the map is re
 
 And we are done.
 
-**Future:** While writing this blog I was thinking that its not difficult to modify `web-mercator-tiles` ([github source][2]) for making it generic. Generic here I mean for any projection. Right  now itself projection transformer is not part of this module and I can initiate the instance with  projection extent and maximum resolution. Then the tiles detail can be calculated easily for any projection. 
+**Future:** While writing this blog I was thinking that its not difficult to modify [web-mercator-tiles][2] for making it generic. Generic here I mean for any projection. Right  now itself projection transformer is not part of this module and I can initiate the instance with  projection extent and maximum resolution. Then the tiles detail can be calculated easily for any projection. **Update:** Here is the generic map tiles calculation module [map-the-tiles][7].
 
 Other basic functionality of any map is navigation. `pan` and `zoom` can also be achieved using some gesture library. I am thinking of using [hammer.js][6]. Certainly I'll try this as my next exercise.
 
@@ -128,3 +128,4 @@ Other basic functionality of any map is navigation. `pan` and `zoom` can also be
 [4]: https://www.npmjs.com/package/sphericalmercator
 [5]: https://github.com/maps-on-blackboard/web-mercator-tiles-map
 [6]: http://hammerjs.github.io/
+[7]: https://www.npmjs.com/package/map-the-tiles
