@@ -1,0 +1,26 @@
+<html>
+<head>
+  <link rel="stylesheet" href="./css/maps.css"/>
+</head>
+  <body>
+    <div id="wrapper" style="width:714px;margin:auto">
+      <p>Map interaction on thematic map using <a href="http://github.com/gagan-bansal/geojson2svg"> geojson2svg</a></p>
+      <p> Countries <a href="http://siteresources.worldbank.org/INTPROSPECTS/Resources/334934-1288990760745/Bilateral_Migration_Matrix_2013.xlsx">bilateral migration data</a> visulazid on the world map. Click on the country to see to/from which countries people are moving.</p>
+      <ul id="type" class="type">
+        <li > <input name="type" id="source" value="source" type="radio" checked><span class="label">Souce Countries</span>
+        <li> <input name="type" id="dest" value="dest" type="radio"><span class="label">Destination Countries</span>
+      </ul>
+      <div id="mapArea" style="width: 100%;border:1px solid #c0c0c0;">
+        <svg id="map" xmlns="http://www.w3.org/2000/svg" x="0" y="0" >
+        </svg>
+      </div>
+      <br>
+      <div id="legend">
+      <span id="less">Few </span>
+      <span>Many</span>
+      </div>
+    </div>
+    <script type="text/javascript" src="./js/build.js"></script>
+  </body>
+</html>
+

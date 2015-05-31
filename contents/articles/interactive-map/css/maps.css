@@ -1,0 +1,23 @@
+#map {
+  background-color: #B8D4F9;
+}
+.nil {
+  stroke: #141414;
+  stroke-width: 0.5px;
+  fill:   #C8C8C8;
+}
+.type li {
+display: inline;
+list-style-type: none;
+padding-right: 20px;
+}
+#legend li {
+display: inline;
+list-style-type: none;
+
+}
+.box {
+  width: 6px;
+  height: 15px;
+  display: inline-block;
+}
