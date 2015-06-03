@@ -1,5 +1,5 @@
 ---
-title: Interective map for data visualisation
+title: Interactive map for data visualization
 author: gagan
 email: gaganbansal123@gmail.com 
 date: 2015-05-31
