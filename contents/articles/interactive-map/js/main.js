@@ -10,7 +10,7 @@ $.when(
   console.log('data not found');
 })
 var migration = {},
-  selCountry = 'india';
+  selCountry;
 $('#mapArea').on('click', 'path', function() {
   renderForCountry(this.id,$('input[name=type]:checked').val());
   selCountry = this.id;
@@ -53,7 +53,7 @@ function drawGeoJSON(respGeojson,respMigration) {
     svgMap.appendChild(svg);
   });
   renderForCountry('United States of America', 'source'); 
-};
+}
 
 function renderForCountry(name,type) {
   var name = name.toLowerCase().replace(/[^a-z0-9]/g,''); 
@@ -64,24 +64,24 @@ function renderForCountry(name,type) {
     .sort(function(a,b) {
       return a.value - b.value;
     });
-  var pallete = new Rainbow();
-  pallete.setNumberRange(0,countries.length - 1);
-  pallete.setSpectrum('#ffff85','#6b0000');
+  var palette = new Rainbow();
+  palette.setNumberRange(0,countries.length - 1);
+  palette.setSpectrum('#ffff85','#6b0000');
   $('#map path').attr('class','nil');
   $('#map path').css('fill','');
   $('#'+name).css('fill','#70d035');
   countries.forEach(function(country,i,arr) {
     $('#'+country.name)
-      .css('fill', '#'+pallete.colorAt(i));
+      .css('fill', '#'+palette.colorAt(i));
   });
 }
 function drawLegend() {
-  var pallete = new Rainbow();
-  pallete.setNumberRange(0,19);
-  pallete.setSpectrum('#ffff85','#6b0000');
+  var palette = new Rainbow();
+  palette.setNumberRange(0,19);
+  palette.setSpectrum('#ffff85','#6b0000');
   for(var i=19; i>-1; i--) {
     $('#less').after('<span class="box" style="background-color:#'
-      + pallete.colorAt(i) + '"</span>'); 
+      + palette.colorAt(i) + '"</span>'); 
   }
 }
 function parseCSV(respString) {
