@@ -6,7 +6,7 @@ date: 2015-04-15
 template: article.jade
 localcss: ['./css/maps.css']
 ---
-A lot of processing is required to create raster map tiles at back end. Yes there are many steps with many software to generate OSM tiles with road data. But on the other hand consuming these map tiles is very easy at browser end. We'll see in this blog how easy it is to display map of reqired area with raster map tile in perticular for spherical mercator commanly known as web mercator projection. 
+A lot of processing is required to create raster map tiles at back end. Yes there are many steps with many software to generate OSM tiles with road data. But on the other hand consuming these map tiles is very easy at browser end. We'll see in this blog how easy it is to display map of required area with raster map tile in particular for spherical mercator commonly known as web mercator projection. 
 
 ## 
  
@@ -87,7 +87,7 @@ zoomTo function:
 33   tiles = webMercatorTiles(mapExtent, zoom);
 ```
 
-As we discussed in the approach extent (web/spehrical mercator) of the map is required for [web-mercator-tiles][1] module. So we calcualte center of the map in mercator projection at line 24. Then resolution for given zoom is calculated at line 25. Now its quite easy to get projected map extent with respect to the center and give map's div size. Pass the map extent and zoom to `webMercatorTile` function to get the tiles details. Here is example of tile object:
+As we discussed in the approach extent (web/spehrical mercator) of the map is required for [web-mercator-tiles][1] module. So we calculate center of the map in mercator projection at line 24. Then resolution for given zoom is calculated at line 25. Now its quite easy to get projected map extent with respect to the center and give map's div size. Pass the map extent and zoom to `webMercatorTile` function to get the tiles details. Here is example of tile object:
 
 ```javascript
 {
