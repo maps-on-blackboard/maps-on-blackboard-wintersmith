@@ -1,0 +1,21 @@
+<html>
+<head>
+  <link rel="stylesheet" href="./css/maps.css">
+</head>
+  <body>
+    <div id="wrapper" style="width:714px;margin:auto">
+      <p>Web Mercator image tiles map using <a href="http://github.com/gagan-bansal/map-the-tiles">map-the-tiles</a>. With this module you can get the tiles for rotated view.</p>
+      <div id="mapArea" >
+        <div id="viewPort" >
+          <div id="tilesContainer"></div>
+        </div>
+      </div>  
+      <span> Center (long, lat) </span><input type="text" id="center" value="-71.147, 42.472" style="width:150px"/>
+      <span> Zoom </span> <input type="number" id="zoom" value="9" style="width:50px" />   
+      <span> Rotation (deg) </span><input type="text" id="rotation" style="width:50px;" value="30"/>
+      <input id="zoomTo" type="button" value="Zoom To" />
+    </div>
+    <script type="text/javascript" src="./js/build.js"></script>
+  </body>
+</html>
+
