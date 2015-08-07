@@ -1,6 +1,6 @@
 #!/bin/bash
 read -p "source blog: " -i blog2-thematic-map -e source
-read -p "new blog name: " -e dest
+read -p "new blog name (repo): " -e dest
 mkdir $dest
 rsync -av \
   --exclude='**/node_modules' \
