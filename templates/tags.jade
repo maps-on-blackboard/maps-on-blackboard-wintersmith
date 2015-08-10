@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  p
+    h2 Tag: #{ tag }
+    each article in articles
+      article.article.intro
+        header
+          h2
+            a(href=article.url)= article.title
+          p.date
+            span= moment.utc(article.date).format('DD. MMMM YYYY')
+        section.content
+          if article.intro.length > 0
+            | !{ typogr(article.intro).typogrify() }
+          if article.hasMore
+            p.more
+              a(href=article.url) more
+
+block prepend footer
+  div.nav
+    if prevPage
+      a(href='#{ prevPage.url }') « Previous Page
+    else
+      a(href='/archive.html') « Archives &amp; Tags
+  
+    if nextPage
+        a(href='#{ nextPage.url }') Next page »
+  
+  

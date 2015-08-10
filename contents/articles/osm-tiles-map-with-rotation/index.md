@@ -4,6 +4,7 @@ author: gagan
 email: gaganbansal123@gmail.com
 date: 2015-07-19
 template: article.jade
+tags: ['shperical-mercator', 'web-mercator','map-tiles', 'osm', 'openstreetmap', 'map-the-tiles','map-rotation']
 localcss: ['./css/maps.css']
 ---
 This article is rewrite of my previous blog [Map of web mercator tiles][0] where I used [web-mercator-tiles][1] module to create the OSM tiles map. I have done two improvements in the new module [map-the-tiles][7]. First it can be used with other projections also, though default is spherical mercator. Second is very exciting, rotated view its quite easy to rotate the map now with this module. We'll explore in detail the module in this blog.

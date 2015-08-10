@@ -228,7 +228,7 @@ footer .copy {
 
 .archive {
   width: 32em;
-  margin: 5em auto 6em;
+  margin: 5em auto 3em;
   padding-left: 2em;
 }
 
@@ -612,4 +612,18 @@ pre code {
   -moz-background-size: cover;
   -o-background-size: cover;
 }
-
+.tags {
+  width: 32em;
+  margin: 5em auto 3em;
+  padding-left: 2em;
+}
+.tags h2 {
+  font-size: 2em;
+  margin: 0;
+  margin-left: 6.1em;
+  margin-bottom: 0.5em;
+}
+.tags ul li {
+  display: inline;
+  margin-right: 0.5em;
+}

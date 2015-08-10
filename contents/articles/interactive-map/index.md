@@ -4,7 +4,7 @@ author: gagan
 email: gaganbansal123@gmail.com 
 date: 2015-05-31
 template: article.jade
-tags: data, visualisation
+tags: ['geojson', 'svg', 'maps', 'geojson2svg', 'thematic-map', 'data-visualization','interactive-maps']
 localcss: ['./css/maps.css']
 ---
 As conceptualized by me [earlier][2] the different components of online maps creation are data, visual rendering, converter and interaction. Once again I'll brief about these components here, but In this article we'll see a nice example of interaction. We'll visualize the [bilateral migration][12] 'to' and 'from' a country by tapping the desired country on map.

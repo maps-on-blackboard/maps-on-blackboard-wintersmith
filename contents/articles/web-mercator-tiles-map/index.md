@@ -4,6 +4,7 @@ author: gagan
 email: gaganbansal123@gmail.com
 date: 2015-04-15
 template: article.jade
+tags: ['shperical-mercator', 'web-mercator','map-tiles', 'osm', 'openstreetmap', 'web-mercator-tiles']
 localcss: ['./css/maps.css']
 ---
 A lot of processing is required to create raster map tiles at back end. Yes there are many steps with many software to generate OSM tiles with road data. But on the other hand consuming these map tiles is very easy at browser end. We'll see in this blog how easy it is to display map of required area with raster map tile in particular for spherical mercator commonly known as web mercator projection. 

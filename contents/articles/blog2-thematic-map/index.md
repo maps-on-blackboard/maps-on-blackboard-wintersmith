@@ -4,6 +4,7 @@ author: gagan
 email: gaganbansal123@gmail.com 
 date: 2015-03-15
 template: article.jade
+tags: ['geojson', 'svg', 'maps', 'geojson2svg', 'thematic-map', 'data-visualization']
 localcss: ['./css/maps.css']
 ---
 In my previous blog [Basic map with geojson2svg][2] we have seen that how easily we can create svg world map using [geojson2svg][1]. The previous map was a basic map without any information of any country. Now we are going to create world population map showing low, medium and high population countries with different colors. 
