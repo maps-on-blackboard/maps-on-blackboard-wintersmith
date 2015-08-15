@@ -1,0 +1,43 @@
+{
+  "name": "background-map",
+  "version": "0.0.0",
+  "description": "This repository is part of my blog[ maps-on-blackboard](http://maps-on-blackboard.com)",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-debug": "browserify js/main.js --debug | exorcist js/build.js.map > js/build.js",
+    "build-min": "browserify js/main.js | uglifyjs -c > js/build.min.js",
+    "build": "npm run build-debug && npm run build-min",
+    "watch": "watchify js/main.js --debug -o js/build.js -v",
+    "start": "node node_modules/http-server/bin/http-server -p 8180"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maps-on-blackboard/background-map.git"
+  },
+  "keywords": [
+    "geojson",
+    "svg",
+    "thematic",
+    "maps",
+    "geojson2svg"
+  ],
+  "author": "Gagan Bansal <gaganbansal123@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maps-on-blackboard/background-map/issues"
+  },
+  "homepage": "https://github.com/maps-on-blackboard/background-map",
+  "dependencies": {
+    "geojson2svg": "^0.1.4",
+    "get-json-data": "0.0.6",
+    "parse-svg": "^0.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "exorcist": "^0.1.6",
+    "http-server": "^0.7.5",
+    "uglify": "^0.1.1",
+    "watchify": "^2.4.0"
+  }
+}
