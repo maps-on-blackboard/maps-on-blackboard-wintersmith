@@ -2,7 +2,7 @@
 title: Rotate and pinch OSM map with geojson data
 author: gagan
 email: gaganbansal123@gmail.com 
-date: 2015-08-30
+date: 2015-09-21
 template: article.jade
 tags: ['gagan-bansal','geojson', 'svg', 'maps', 'geojson2svg', 'thematic-map', 'data-visualization','rotate-map','interactive-maps', 'maps-navigation','rotate','pan', 'drag','pinch', 'zoom', 'emptymapjs','hammerjs']
 localcss: ['./css/maps.css']
