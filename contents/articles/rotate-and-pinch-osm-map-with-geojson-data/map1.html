@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en'>
+<head>
+  <link rel="stylesheet" href="./css/maps.css"/>
+    <meta  content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+    <script src="http://cdn.rawgit.com/hammerjs/touchemulator/master/touch-emulator.js"></script>
+    <script> TouchEmulator();</script>
+  <style>
+  </style>
+</head>
+  <body>
+    <div id="wrapper" style="width:714px;margin:auto">
+      <h2>Pinch and rotate OSM maps & GeoJSON as SVG maps using <a href="http://github.com/gagan-bansal/emptymap.js">emptymap.js</a></h2>
+      <p> OSM tiles are calculated for a given map extend with <a href="https://github.com/gagan-bansal/map-the-tiles">map-the-tiles</a> and GeoJSON is rendered as SVG using <a href="http://github.com/gagan-bansal/geojson2svg">geojson2svg</a>. Map navigation (pan, pinch and rotation) achived with <a href="http://www.hammerjs.com/">Hammer.js </a> & <a href="http://github.com/gagan-bansal/emptymap.js">emptymap.js</a>. </p>
+      <pre id="viewJSON" style="background-color:#eee;font-size:12px;"> View </pre>
+      Use shift key to emulate touch for desktop. For firefox emulator doesn't work properly. 
+      <div id="map" class="rt-map">
+        <div class="pannel">
+          <div id="zoomin" class="icon">
+           <span>+</span> 
+          </div>
+          <div id="zoomout" class="icon">
+           <span class="left-margin">-</span> 
+          </div>
+          <div id="anticlockwise" class="icon">
+            <img src="./img/counterclockwise.png" />
+          </div>
+          <div id="clockwise" class="icon">
+            <img src="./img/clockwise.png" />
+          </div>
+        </div> 
+        <div class="credit">Icons made by <a href="http://www.flaticon.com/authors/linh-pham" title="Linh Pham">Linh Pham</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>, Map Tiles © <a href="//www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</div>
+        <div class="rt-viewport">
+          <div class="rt-nonscalable-stack">
+            <div class="rt-tile-stack">
+              <div id="osm" class="rt-tile-layer"></div> 
+            </div>
+          </div>
+          <div class="rt-scalable-stack">
+            <svg class="rt-svg" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="100%" height="100%">
+              <g class="rt-svg-stack"></g>
+            </svg>
+          </div>
+        </div>
+      </div> 
+      <ul id="legend">
+        <li> Population map </li>
+        <li> <span class="box l"></span><span class="label"> &lt;&#61; 30m</span>
+        <li> <span class="box m"></span><span class="label"> &gt; 30m and &lt;&#61; 60m</span>
+        <li> <span class="box h"></span><span class="label"> &gt; 60m</span>
+      </ul>
+      <script type="text/javascript" src="./js/build.js"></script>
+    </div>
+  </body>
+</html>
+
