@@ -4,7 +4,7 @@ author: gagan
 email: gaganbansal123@gmail.com 
 date: 2015-08-02
 template: article.jade
-tags: ['geojson', 'svg', 'maps', 'geojson2svg', 'thematic-map', 'data-visualization','rotate-map','interactive-maps', 'maps-navigation','rotate','pan', 'drag','pinch', 'zoom', 'emptymap.js','hammer.js']
+tags: ['geojson', 'svg', 'maps', 'geojson2svg', 'thematic-map', 'data-visualization','rotate-map','interactive-maps', 'maps-navigation','rotate','pan', 'drag','pinch', 'zoom', 'emptymapjs','hammerjs']
 localcss: ['./css/maps.css']
 ---
 As I am writing the blog you might have guessed that answer is going to be yes. I mean not only drag, pinch and rotation but also retrieving map's view (center coordinate, zoom level/ resolution and rotation angle) after applying many touch operations. So I want to create all maps navigation features and along with handling of maps view state in maps coordinate system. In some of my previous articles like [Thematic map with geojson2svg][1] and [Interactive map for data visualization][2] I have explained how easily we can create the SVG maps with GeoJSON data. In this article I'll implement [emptymap.js][3] with [Hammer.js][4] to achieve maps navigation.

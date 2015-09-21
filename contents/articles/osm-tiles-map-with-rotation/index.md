@@ -15,7 +15,9 @@ A lot of processing is required to create raster map tiles at back end. Yes ther
 
 Here is the map with spherical mercator projected image tiles using npm module [map-the-tiles][7]. You can change the center, zoom and rotation of this map. In the current example map can not be dragged or zoomed, the idea is to show the calculation of map tiles at proper place.
 
-<div id="mapArea"><div id="viewPort"><div id="tilesContainer"></div></div></div>
+<div id="mapArea"><div id="viewPort"><div id="tilesContainer"></div></div>
+  <div class="credit">Map Tiles © <a href="//www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</div>
+</div>
 <span> Center (long, lat) </span><input type="text" id="center" value="-71.147, 42.472" style="width:150px"/> <span> Zoom </span> <input type="number" id="zoom" value="9" style="width:50px" /> <span> Rotation (deg) </span><input type="text" id="rotation" style="width:50px;" value="30"/><input id="zoomTo" type="button" value="Zoom To" />
 <script type="text/javascript" src="./js/build.js"></script>
 

@@ -22,3 +22,10 @@
   position:absolute;
   width: auto !important;
 }
+.credit {
+  position: absolute;
+  bottom: 0px;
+  margin: 5px;
+  font-size: 11px;
+  z-index: 9999;
+}
