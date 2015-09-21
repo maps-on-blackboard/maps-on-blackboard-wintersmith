@@ -1,0 +1,48 @@
+{
+  "name": "rotate-and-pinch-osm-map-with-geojson-data",
+  "version": "0.0.0",
+  "description": "This repository is part of my blog[ maps-on-blackboard](http://maps-on-blackboard.com)",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-debug": "browserify js/main.js --debug | exorcist js/build.js.map > js/build.js",
+    "build-min": "browserify js/main.js | uglifyjs -c > js/build.min.js",
+    "build": "npm run build-debug && npm run build-min",
+    "watch": "watchify js/main.js --debug -o js/build.js -v",
+    "start": "node node_modules/http-server/bin/http-server -p 8180"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maps-on-blackboard/rotate-and-pinch-osm-map-with-geojson-data.git"
+  },
+  "keywords": [
+    "geojson",
+    "svg",
+    "thematic",
+    "maps",
+    "geojson2svg"
+  ],
+  "author": "Gagan Bansal <gaganbansal123@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maps-on-blackboard/rotate-and-pinch-osm-map-with-geojson-data/issues"
+  },
+  "homepage": "https://github.com/maps-on-blackboard/rotate-and-pinch-osm-map-with-geojson-data",
+  "dependencies": {
+    "emptymap.js": "0.0.0",
+    "extend-geojson-properties": "^0.1.2",
+    "geojson2svg": "^1.0.1",
+    "hammerjs": "^2.0.4",
+    "jquery": "^2.1.3",
+    "map-the-tiles": "^1.2.1",
+    "parse-svg": "^0.0.0",
+    "reproject-spherical-mercator": "^0.1.2"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "exorcist": "^0.1.6",
+    "http-server": "^0.7.5",
+    "uglify": "^0.1.1",
+    "watchify": "^3.3.1"
+  }
+}
